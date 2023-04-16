@@ -1,0 +1,1 @@
+ every time we run the test using pom.xml : we have to change the project name in line number 89, and the test name in line number 72

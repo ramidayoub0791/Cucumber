@@ -11,6 +11,7 @@ public class AddEmployee extends CommonMethods {
     public void user_clicks_on_pim_option() {
       // WebElement pim= driver.findElement(By.id("menu_pim_viewPimModule"));
     //    AddEmployeePage add=new AddEmployeePage();
+     //   System.out.println(10/0);
        doClick(add.pim);
     }
     @When("user clicks on add employee button")

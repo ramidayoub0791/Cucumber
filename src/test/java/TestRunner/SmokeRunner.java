@@ -10,12 +10,12 @@ import org.junit.runner.RunWith;
         dryRun = false,
        // tags = "@testcase1 or @testcase2 and @smoke",
        // tags = "@smoke1 or @testcase2 and @smoke or @smoke or @smoke2",
-        tags = "@smoke1",
+        tags = "@smoke",
        // tags = "@ScenarioOutline1",
       //  tags = "@dataTable",
-        plugin = {"pretty","html:target/Cucumber.html","json:target/Cucumber.json"}
+        plugin = {"pretty","html:target/Cucumber.html","json:target/Cucumber.json","rerun:target/failed.txt"}
 )
-class SmokeRunner {
+public class SmokeRunner {
 }
 
 
