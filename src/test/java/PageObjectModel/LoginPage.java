@@ -28,6 +28,8 @@ public class LoginPage extends CommonMethods {
     @FindBy(xpath = "//a[text()='Logout']")
     public WebElement logoutLink;
 
+    @FindBy(xpath = "//a[contains(text(), 'Welcome')]")
+    public WebElement verify;
 
 }
 

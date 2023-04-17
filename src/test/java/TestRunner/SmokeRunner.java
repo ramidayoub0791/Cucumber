@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         tags = "@smoke",
        // tags = "@ScenarioOutline1",
       //  tags = "@dataTable",
-        plugin = {"pretty","html:target/Cucumber.html","json:target/Cucumber.json","rerun:target/failed.txt"}
+        plugin = {"pretty","html:target/Cucumber.html","json:target/Cucumber.json","rerun:target/failed.txt","junit:target/cucumber-reports/Cucumber.xml"}
 )
 public class SmokeRunner {
 }

@@ -31,6 +31,9 @@ public class Login extends CommonMethods {
         //driver.findElement(By.id("txtUsername")).sendKeys(ConfigReader.getPropertyValue("username"));
 //        WebElement usernameTextBox = driver.findElement(By.id("txtUsername"));
 
+//from CommonMethod(PageInitializer.LoginPage, ConfigReader.getPropertyValue("username"));
+//                                       ||
+//                                       \/
         sendText(login.usernameTextBox, ConfigReader.getPropertyValue("username"));
 
         //driver.findElement(By.id("txtPassword")).sendKeys(ConfigReader.getPropertyValue("password"));
@@ -50,7 +53,9 @@ public class Login extends CommonMethods {
 
     @Then("user is logged in successfully into the application")
     public void user_is_logged_in_successfully() {
-        boolean userloggedIn = driver.findElement(By.xpath("//a[contains(text(), 'Welcome')]")).isDisplayed();
+     //   boolean userloggedIn = driver.findElement(By.xpath("//a[contains(text(), 'Welcome')]")).isDisplayed();
+        boolean userloggedIn = login.verify.isDisplayed();
+
         if (userloggedIn) {
             System.out.println("User is logged in Successfully");
         }
