@@ -1,59 +1,87 @@
 package StepDefinitions;
 
-import PageObjectModel.AddEmployeePage;
 import Utils.CommonMethods;
 import Utils.ConfigReader;
+import Utils.DBUtility;
+import Utils.GlobalVariables;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class AddEmployee extends CommonMethods {
-  //  public AddEmployeePage add=new AddEmployeePage();
+
     @When("user clicks on PIM option")
     public void user_clicks_on_pim_option() {
-      // WebElement pim= driver.findElement(By.id("menu_pim_viewPimModule"));
-    //    AddEmployeePage add=new AddEmployeePage();
-     //   System.out.println(10/0);
-       doClick(add.pim);
+
+        // driver.findElement(By.id("menu_pim_viewPimModule")).click();
+        //WebElement pimTab = driver.findElement(By.id("menu_pim_viewPimModule"));
+        doClick(add.pimTab);
+
     }
+
     @When("user clicks on add employee button")
     public void user_clicks_on_add_employee_button() {
-      //  WebElement add=driver.findElement(By.id("menu_pim_addEmployee"));
-        doClick(add.add);
+
+        //WebElement eddEmpBtn = driver.findElement(By.id("menu_pim_addEmployee"));
+        doClick(add.eddEmpBtn);
     }
+
     @When("user enters firstname and middlename and lastname")
     public void user_enters_firstname_and_middlename_and_lastname() {
-//        driver.findElement(By.id("firstName")).sendKeys(ConfigReader.getPropertyValue("firstname"));
-//        driver.findElement(By.id("middleName")).sendKeys(ConfigReader.getPropertyValue("middlename"));
-//        driver.findElement(By.id("lastName")).sendKeys(ConfigReader.getPropertyValue("lastname"));
-        // OR :
 
-     //  WebElement firstname= driver.findElement(By.id("firstName"));
-       sendText(add.firstname,ConfigReader.getPropertyValue("firstname"));
+        //driver.findElement(By.id("firstName")).sendKeys(ConfigReader.getPropertyValue("firstname"));
+        //WebElement firstNameTextBox = driver.findElement(By.id("firstName"));
+        sendText(add.firstNameTextBox, ConfigReader.getPropertyValue("firstname"));
 
-     //   WebElement middlename=driver.findElement(By.id("middleName"));
-        sendText(add.middlename,ConfigReader.getPropertyValue("middlename"));
+        //driver.findElement(By.id("middleName")).sendKeys(ConfigReader.getPropertyValue("middlename"));
 
-     //   WebElement lastname=driver.findElement(By.id("lastName"));
-        sendText(add.lastname,ConfigReader.getPropertyValue("lastname"));
+        //WebElement middleNameTextBox = driver.findElement(By.id("middleName"));
+        sendText(add.middleNameTextBox, ConfigReader.getPropertyValue("middlename"));
 
+        //driver.findElement(By.id("lastName")).sendKeys(ConfigReader.getPropertyValue("lastname"));
+        //WebElement lastNameTextBox = driver.findElement(By.id("lastName"));
+        sendText(add.lastNameTextBox, ConfigReader.getPropertyValue("lastname"));
 
     }
+
     @When("user clicks on save button")
     public void user_clicks_on_save_button() {
-    //   WebElement save= driver.findElement(By.id("btnSave"));
-       doClick(add.save);
+        //WebElement saveBtn = driver.findElement(By.id("btnSave"));
+        doClick(add.saveBtn);
     }
 
-    @When("user enters {string} and {string} and {string}")
-    public void user_enters_and_and(String firstName, String middleName, String lastName) {
-     //   WebElement firstname= driver.findElement(By.id("firstName"));
-        sendText(add.firstname,firstName);
-
-       // WebElement middlename=driver.findElement(By.id("middleName"));
-        sendText(add.middlename,middleName);
-
-      //  WebElement lastname=driver.findElement(By.id("lastName"));
-        sendText(add.lastname,lastName);
+    @When("user enters {string} and {string} and  {string}")
+    public void user_enters_and_and(String fname, String mname, String lname) {
+        sendText(add.firstNameTextBox, fname);
+        sendText(add.middleNameTextBox, mname);
+        sendText(add.lastNameTextBox, lname);
     }
 
+    @When("user captures the employee id")
+    public void user_captures_the_employee_id() {
+        GlobalVariables.emp_id = add.empIdLocator.getAttribute("value");
+        System.out.println("The employee id is: " + GlobalVariables.emp_id);
+    }
 
+    @When("query the information in backend")
+    public void query_the_information_in_backend() {
+        String query = "select * from hs_hr_employees where employee_id='" + GlobalVariables.emp_id + "'";
+        //to store the table coming from db, we used global variable here
+        //in this variable we got all the keys and values for the employee we searched
+        GlobalVariables.tabledata = DBUtility.getListOfMapsFromRset(query);
+    }
+
+    @Then("verify the results from frontend and backend")
+    public void verify_the_results_from_frontend_and_backend() {
+        //now, from all these values we need to compare one by one value
+        String firstNameFromDB = GlobalVariables.tabledata.get(0).get("emp_firstname");
+        System.out.println(firstNameFromDB);
+        String lastNamefromDB = GlobalVariables.tabledata.get(0).get("emp_lastname");
+        System.out.println(lastNamefromDB);
+
+        //adding assertions
+        Assert.assertEquals(firstNameFromDB, "nesha");
+        Assert.assertEquals(lastNamefromDB, "standart");
+        System.out.println("My assertion has passed my test case");
+    }
 }

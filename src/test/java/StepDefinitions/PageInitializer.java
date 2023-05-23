@@ -1,5 +1,6 @@
 package StepDefinitions;
 
+import PageObjectModel.AddDifferentLanguagePage;
 import PageObjectModel.AddEmployeePage;
 import PageObjectModel.LoginPage;
 
@@ -7,10 +8,13 @@ public class PageInitializer {
 
     public  static LoginPage login;
     public  static AddEmployeePage add;
+
+    public static AddDifferentLanguagePage addDifferentLanguagePage;
     public  static void initializePageObjects()
     {
         login = new LoginPage();
         add= new AddEmployeePage();
+        addDifferentLanguagePage=new AddDifferentLanguagePage();
     }
 
 }

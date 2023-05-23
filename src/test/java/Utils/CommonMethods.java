@@ -2,6 +2,7 @@ package Utils;
 
 import StepDefinitions.PageInitializer;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -50,10 +51,18 @@ public class CommonMethods extends PageInitializer {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(Constants.WAIT_TIME));
         initializePageObjects();// This will initialize all the pages we have in our Page
         //PageInitializer class along with the launching of application
+
+        //to confifure the file and pattern of it, we need to call the file
+        DOMConfigurator.configure("log4j.xml");
+        Log.startTestCase("This is beginning of test case");
+        Log.info("My login test is going on");
+        Log.warning("My test case might be failed");
     }
 
 
     public static void closeBrowser() {
+        Log.info("My test case is about to complete");
+        Log.endTestCase("This test case is finished");
         driver.close();
     }
 
