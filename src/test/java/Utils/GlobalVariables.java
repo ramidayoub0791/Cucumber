@@ -8,4 +8,6 @@ public class GlobalVariables {
     public static List<Map<String, String>> tabledata;
     public static List<String> lngList;
 
+    public static String APIemployee_id;
+
 }

@@ -17,6 +17,7 @@ public class DBUtility {
     public static ResultSet getResultSet(String sqlQuery){
         try {
             conn = DriverManager.getConnection(
+                 //   "jdbc:mysql://3.239.253.255:3306/syntaxhrm_mysql","syntax_hrm","syntaxhrm123");
                     ConfigReader.getPropertyValue("urldb"),
                     ConfigReader.getPropertyValue("usernamedb"),
                     ConfigReader.getPropertyValue("passworddb"));
@@ -28,6 +29,8 @@ public class DBUtility {
         }
         return rset;
     }
+
+    //DBUtility.getResultSet(select employee_id from hs_hr_employees where emp_firstname ='TimoJado' and emp_lastname ='Dayouboo');
 
     //this method will return the object of rsetmetadata
     public static ResultSetMetaData getrSetMetaDa(String query){

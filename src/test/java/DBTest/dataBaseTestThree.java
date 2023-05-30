@@ -11,15 +11,15 @@ import java.util.Map;
 
 public class dataBaseTestThree extends DBUtility {
     public static void main(String[] args) {
-//        String url = "jdbc:mysql://3.239.253.255:3306/syntaxhrm_mysql";
-//        String username = "syntax_hrm";
-//        String password = "syntaxhrm123";
+        String url = "jdbc:mysql://3.239.253.255:3306/syntaxhrm_mysql";
+        String username = "syntax_hrm";
+        String password = "syntaxhrm123";
 
         try {
-            Connection conn = DriverManager.getConnection(
-                    ConfigReader.getPropertyValue("dbUrl"),
-                    ConfigReader.getPropertyValue("dbUsername"),
-                    ConfigReader.getPropertyValue("dbPassword"));
+            Connection conn = DriverManager.getConnection(ConfigReader.getPropertyValue("urldb"), username, password);
+//                    ConfigReader.getPropertyValue("urldb"),
+//                    ConfigReader.getPropertyValue("usernamedb"),
+//                    ConfigReader.getPropertyValue("passworddb"));
             System.out.println("Connection is created for batch 15");
             //create a statement to send sql queries
             Statement statement = conn.createStatement();
