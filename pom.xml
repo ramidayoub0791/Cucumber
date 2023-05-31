@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.8.3</version>
+            <version>4.9.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -108,9 +108,20 @@
                 <configuration>
                     <includes>
                         <include>**/*SmokeRunner.java</include>
+                           <include>master.xml</include>
+                              <include>master.xml</include>
                     </includes>
                 </configuration>
             </plugin>
+
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <version>3.11.0</version>
+                            <configuration>
+                                <!-- put your configurations here -->
+                            </configuration>
+                        </plugin>
 
             <plugin>
                 <groupId>net.masterthought</groupId>

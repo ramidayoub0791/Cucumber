@@ -30,11 +30,21 @@ public class CommonMethods extends PageInitializer {
         String browserType = ConfigReader.getPropertyValue("browserType");
         switch (browserType) {
             case "chrome":
+
+                ChromeOptions ops = new ChromeOptions();
+                ops.addArguments("--no-sandbox");
+                ops.addArguments("--remote-allow-origins=*");
+                if(ConfigReader.getPropertyValue("Headless").equals("true")){
+                    ops.addArguments("--headless=new");
+                }
+                driver = new ChromeDriver(ops);
+                break;
+
+   //    OR :
 //                ChromeOptions options=new ChromeOptions();
 //                options.setHeadless(true);
 //                driver = new ChromeDriver(options);
-                driver = new ChromeDriver();
-                break;
+
 
             case "Firefox":
                 driver = new FirefoxDriver();

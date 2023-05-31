@@ -5,48 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e061d5c2-1606-4c6d-903b-17b1800b9cc0" name="Changes" comment="take Screen Shot..">
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-30-10-09-28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/API/HardCodedExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/API/hardCodedGetAllEmployees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/APIWorkflowSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/GenerateTokenSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner/APIRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/APIConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/APIPayloadConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/toReadExcelSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/APIWorkflow.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-13-17-43-36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-13-17-45-59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-13-17-48-17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-13-17-49-31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-13-17-50-47.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-30-10-07-36.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-13-17-53-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Add Different Language2023-05-13-17-54-44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Add Different Language2023-05-13-18-02-34.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/failed/Add Different Language2023-05-30-10-00-44.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-16-08-21-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-16-11-13-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-16-11-16-59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-19-12-19-45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-19-12-30-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-19-12-38-07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-19-12-43-42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new Employee2023-04-23-11-08-09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-16-08-18-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/passed/updating the employee via API call2023-05-30-10-05-15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-16-11-13-52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-16-11-17-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-19-12-19-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-19-12-30-17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-19-12-38-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-19-12-43-45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin login2023-04-23-11-08-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/adding the employee from front end and verifying it from back end2023-05-13-13-31-08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DBTest/dataBaseTestThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DBTest/dataBaseTestThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/GlobalVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/GlobalVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/ramid/IdeaProjects/CucumberBatch15",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ramid/IdeaProjects/CucumberBatch15&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ramid\IdeaProjects\CucumberBatch15\src\test\resources\Features" />
@@ -223,8 +187,26 @@
       <option name="project" value="LOCAL" />
       <updated>1684872644663</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="take Screen Shot..">
+      <created>1685474416143</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685474416143</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
