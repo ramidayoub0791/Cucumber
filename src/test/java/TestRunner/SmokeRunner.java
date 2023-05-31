@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         dryRun = false,
        // tags = "@testcase1 or @testcase2 and @smoke",
        // tags = "@smoke1 or @testcase2 and @smoke or @smoke or @smoke2",
-      //  tags = "@database",
-        tags = "@smoke3",
+       tags = "@database",
+       // tags = "@smoke3",
 
        // tags = "@ScenarioOutline1",
       //  tags = "@dataTable",
